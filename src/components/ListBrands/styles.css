@@ -1,0 +1,22 @@
+.brands .brands-header-title{
+  color: #f0f0f0;
+  background-color: #333;
+}
+.list-group-item{
+  padding: 10px !important;
+  cursor: pointer;
+  color: #333
+}
+.brands a{
+  text-decoration: none !important;
+}
+.brands a:hover{
+  text-decoration: none !important;
+}
+.brands a .list-group-item.teste:hover{
+  background: #f0f0f0 !important;
+  color: #333
+}
+.brands .list-group-item:nth-child(1):hover{
+  background: #333 !important;
+}

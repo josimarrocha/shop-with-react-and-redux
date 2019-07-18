@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux'
+import { BrowserRouter as Router } from 'react-router-dom'
+import Routes from './routes'
+import Header from './components/Header'
+import ListBrands from './components/ListBrands'
+import Intro from './components/Intro'
+import { showProdutos } from './reducers/produtos/actionsCreators'
+import 'bootstrap-css'
 
-function App() {
+function App({ loadingProdutos, visible }) {
+  useEffect(() => {
+    loadingProdutos()
+  }, [loadingProdutos])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Header />
+        {visible.showIntro === true && <Intro />}
+        <div className="container-fluid py-4 container-main">
+          <div className="row px-md-3 px-1">
+            <ListBrands />
+            <Routes />
+          </div>
+        </div>
+      </Router>
+    </>
   );
 }
 
-export default App;
+const mapStateToProps = state => ({
+  visible: state.ui
+})
+
+export default connect(mapStateToProps, { loadingProdutos: showProdutos })(App)

@@ -1,0 +1,31 @@
+.products .card{
+  box-shadow: 0 0 10px #999;
+  transition: transform .2s linear;
+  cursor: pointer;
+  max-width: 240px;
+  position: relative;
+}
+.products .card .btn{
+  position: relative;
+  bottom: 2px;
+  width: 100%;
+  left: 0;
+}
+.card-text{
+  height: 40px;
+  font-size: 14px;
+}
+@media (max-width: 575px){
+  .card-title{
+    font-size: 18px;
+  }
+}
+.products .card:hover{
+  transform: scale(1.03)
+}
+.products .img-fluid{
+  box-shadow: 0 1px 1px #ccc;
+}
+.products a:hover{
+  text-decoration: none !important
+}

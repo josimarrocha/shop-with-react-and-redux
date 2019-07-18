@@ -1,0 +1,31 @@
+.cart-item img{
+  max-width: 4rem;
+}
+.cart-item .cart-products-name{
+  width: 23%;
+  max-width: 100%;
+}
+.cart-item .cart-products-price{
+  width: 20%;
+  max-width: 100%;
+}
+.cart-item .cart-products-brand{
+  width: 15%;
+  max-width: 100%;
+}
+.cart-item .cart-products-count{
+  width: 20%;
+  max-width: 100%;
+}
+.cart-item .cart-products-count input{
+  width: 40px;
+  height: 30px;
+}
+.cart-products-delete i {
+  font-size: 22px; 
+  color: #D9534F;
+  cursor: pointer;
+}
+.cart-item.list-group-item{
+  cursor: default
+}

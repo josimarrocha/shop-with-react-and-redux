@@ -1,0 +1,73 @@
+header > .container-fluid {
+  background: #333;
+  position: fixed !important;
+  width: 100%;
+  max-width: 100%;
+  top: 0;
+  box-shadow: 2px 0 5px #000;
+  z-index: 1;
+}
+header > .container-fluid > .row{
+  height: 60px;
+}
+.brand > a h3 {
+  text-transform: uppercase;
+  color: #f2f2f2;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.brand a{
+  text-decoration: none !important;
+}
+.brand a:hover{
+  text-decoration: none !important;
+}
+@media (max-width: 575px){
+  .brand > h3{
+    font-size: 1.3rem;
+  }
+}
+.search .input-search{
+  background: transparent;
+  outline: none;
+  color: #f0f0f0;
+  border: none;
+  border-bottom: 1px solid #f0f0f0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  max-width: 400px;
+}
+.search .input-search:focus{
+  background: transparent;
+  color: white;
+}
+.cart{
+  position: relative;
+}
+.cart .cart-icone{
+  position: relative;
+  font-size: 18px;
+}
+
+.cart .cart-number-total{
+  position: absolute;
+  top: -10px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  background: red;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 3px;
+}
+
+.header-intro{
+  background: #333;
+}
+.cart .tooltip-info{
+  position: absolute;
+  padding: 0 8px;
+  top: 30px;
+  left: 100px;
+}

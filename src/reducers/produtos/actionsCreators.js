@@ -1,8 +1,22 @@
-import { SHOW_PRODUTOS, PRODUCTS_SEARCH_BRAND, UPDATE_DATA, PRODUCTS_SEARCH_INPUT } from './actions'
+import {
+  SHOW_PRODUTOS,
+  PRODUCTS_SEARCH_BRAND,
+  UPDATE_DATA,
+  PRODUCTS_SEARCH_INPUT
+} from './actions'
+
+import { LOADING_PRODUCTS_STORAGE } from '../shoppingCart/actions'
 import produtos from '../../produtos'
 
+export const showProdutos = () => async dispatch => {
+  const productsLocalStorage = JSON.parse(await localStorage.getItem('@cartProducts'))
+  await dispatch({
+    type: LOADING_PRODUCTS_STORAGE,
+    payload: productsLocalStorage
+      ? productsLocalStorage.products
+      : []
+  })
 
-export const showProdutos = () => dispatch => {
   dispatch({
     type: SHOW_PRODUTOS,
     payload: produtos

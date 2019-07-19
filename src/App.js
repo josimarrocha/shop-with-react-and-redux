@@ -33,4 +33,7 @@ const mapStateToProps = state => ({
   visible: state.ui
 })
 
-export default connect(mapStateToProps, { loadingProdutos: showProdutos })(App)
+export default connect(mapStateToProps,
+  {
+    loadingProdutos: showProdutos,
+  })(App)

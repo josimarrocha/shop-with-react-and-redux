@@ -6,7 +6,7 @@ import Produto from './Produto'
 
 import './styles.css'
 
-const ListProdutos = ({ produtos, addProduct, updatedb }) => {
+const ListProdutos = ({ produtos, addProduct, updatedb, cart }) => {
   const [products, setProducts] = useState([])
   useEffect(() => {
     setProducts(produtos)
@@ -22,6 +22,7 @@ const ListProdutos = ({ produtos, addProduct, updatedb }) => {
               produto={produto}
               addItemCart={addProduct}
               updateDB={updatedb}
+              cart={cart}
             />
           ))}
         </div>
@@ -35,4 +36,8 @@ const mapStateToProps = state => ({
   cart: state.shoppingCart
 })
 
-export default connect(mapStateToProps, { addProduct: addItemCart, updatedb: updateData })(ListProdutos)
+export default connect(mapStateToProps,
+  {
+    addProduct: addItemCart,
+    updatedb: updateData,
+  })(ListProdutos)

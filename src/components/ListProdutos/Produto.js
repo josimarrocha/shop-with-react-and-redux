@@ -1,11 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Produto = ({ produto, updateDB, addItemCart }) => {
+const Produto = ({ produto, updateDB, addItemCart, cart }) => {
   const updateDataAndAddToCart = (produto) => {
     addItemCart(produto)
     updateDB(produto, true)
   }
+  const hasProductCart = (id) => {
+    let hasProduct = false
+    !!cart.cart.length && cart.cart.forEach(product => {
+      if (product.id === id) {
+        hasProduct = product.inCart
+      }
+    })
+    return hasProduct
+  }
+
   return (
     <div className="col-md-3 col-sm-4 col mb-3 px-1 px-md-2">
       <div className='card p-1'>
@@ -25,12 +35,12 @@ const Produto = ({ produto, updateDB, addItemCart }) => {
         </Link>
         <button
           type='button'
-          disabled={produto.inCart ? true : false}
-          className={`btn btn-${produto.inCart ? 'success disabled' : 'primary'} d-block`}
+          disabled={hasProductCart(produto.id)}
+          className={`btn btn-${hasProductCart(produto.id) ? 'success disabled' : 'primary'} d-block`}
           onClick={() => updateDataAndAddToCart(produto)}
         >
-          <i className={`${produto.inCart ? 'far fa-check-circle' : 'fas fa-plus-circle'} mr-2`} />
-          {produto.inCart ? 'Adicionado' : 'Adicionar'}
+          <i className={`${hasProductCart(produto.id) ? 'far fa-check-circle' : 'fas fa-plus-circle'} mr-2`} />
+          {hasProductCart(produto.id) ? 'Adicionado' : 'Adicionar'}
         </button>
       </div>
     </div>

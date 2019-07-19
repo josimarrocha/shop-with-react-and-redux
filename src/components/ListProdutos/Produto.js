@@ -10,7 +10,11 @@ const Produto = ({ produto, updateDB, addItemCart }) => {
     <div className="col-md-3 col-sm-4 col mb-3 px-1 px-md-2">
       <div className='card p-1'>
         <Link to={`/product/${produto.id}`} style={{ color: 'black' }} className='mx-auto'>
-          <img src={`http://localhost:3000/${produto.image}`} className='img-fluid card-img-top' alt="" />
+          <img
+            src={`http://localhost:3000/${produto.image}`}
+            className='img-fluid card-img-top' alt=""
+            style={{ maxHeight: '200px' }}
+          />
           <div className="card-body p-2">
             <h4 className='card-title mb-1'>{produto.price}</h4>
             <p className="card-text">{produto.title}</p>

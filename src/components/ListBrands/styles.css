@@ -1,3 +1,6 @@
+.brands{
+  min-height: 498px !important;
+}
 .brands .brands-header-title{
   color: #f0f0f0;
   background-color: #333;
@@ -19,4 +22,10 @@
 }
 .brands .list-group-item:nth-child(1):hover{
   background: #333 !important;
+}
+
+@media (max-width: 991px){
+  .brands{
+    min-height: 10px !important;
+  }
 }

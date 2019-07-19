@@ -1,4 +1,9 @@
-import { ADD_ITEM_CART, REMOVE_ITEM_CART, ADD_QNTD, REMOVE_QNTD } from './actions'
+import {
+  ADD_ITEM_CART,
+  REMOVE_ITEM_CART,
+  ADD_QNTD,
+  REMOVE_QNTD,
+} from './actions'
 
 export const addItemCart = (produto) => dispatch => {
   dispatch({

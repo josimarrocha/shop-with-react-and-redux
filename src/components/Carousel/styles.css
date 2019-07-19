@@ -1,0 +1,39 @@
+.header-intro{
+  position: relative;
+  width: 100%;
+}
+.header-intro img{
+  max-height: 400px
+}
+.header-intro .previous, .header-intro .next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-100%);
+  color: white;
+  font-size: 38px;
+}
+.header-intro .previous{
+  left: 110px;
+}
+.header-intro .next{
+  right: 110px;
+}
+
+.show-enter {
+  opacity: 0;
+  transform: translateX(120%);
+}
+.show-enter.show-enter-active {
+  /* opacity: 1; */
+  transition: transform 300ms ease-in;
+  transform: translateX(0);
+}
+.show-leave {
+  opacity: 0;
+  transform: translateX(120%);
+}
+.show-leave.show-leave-active {
+  opacity: 0;
+  transition: transform 300ms;
+  transform: translateX(120%);
+}

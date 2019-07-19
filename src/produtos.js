@@ -161,5 +161,6 @@ export default {
       "description": "O Asus ZenFone Max Plus M2 é um smartphone Android de bom nível, ótimo para fotos, que pode satisfazer até o mais exigente dos usuários. Tem uma enorme tela Touchscreen de 6.26 polegadas com uma resolução de 2280x1080 pixel. Sobre as características deste Asus ZenFone Max Plus M2 na verdade não falta nada. Começando pelo LTE 4G que permite a transferência de dados e excelente navegação na internet, além de conectividade Wi-fi e GPS. Tem também leitor multimídia, rádio, videoconferência e bluetooth. Enfatizamos a boa memória interna de 32 GB com a possibilidade de expansão. O Asus ZenFone Max Plus M2 é um produto com poucos concorrentes em termos de multimídia graças à câmera de 12 megapixels que permite ao Asus ZenFone Max Plus M2 tirar fotos de alta qualidade com uma resolução de 4000x3000 pixels e gravar vídeos em alta definição Full HD com uma resolução de 1920x1080 pixels.Muito fino, 8.5 milímetros, o que torna o Asus ZenFone Max Plus M2 realmente"
     }
   ],
-  brands: ['Apple', 'Asus', 'Samsung', 'LG', 'Xiaomi', 'Sony', 'Motorola']
+  brands: ['Apple', 'Asus', 'Samsung', 'LG', 'Xiaomi', 'Sony', 'Motorola'],
+  imagesCarossel: ['images/intro1.png', 'images/intro2.png', 'images/intro3.png']
 }

@@ -1,0 +1,41 @@
+section.footer{
+  position: relative !important;
+  background: #333;
+  color: #f8f8f8;
+}
+.footer .social-media, .footer .contatos{
+  border: solid 1px #f8f8f81f;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer .social-media .facebook:hover,
+.footer .social-media .github:hover,
+.footer .social-media .linkedin:hover{
+  background: rgba(145, 146, 146, 0.205);
+  cursor: pointer;
+}
+.footer .social-media h5{
+  letter-spacing: 1.5px;
+}
+.footer .social-media div a{
+  color: #eee
+}
+.footer .social-media div a:hover{
+  text-decoration: none;
+}
+.footer div i{
+  border: solid 1px #f8f8f891;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  text-align: center;
+}
+.footer .facebook i{
+  background: #4267B2
+}
+.footer .linkedin i{
+  background: #0077B5
+}
+.footer .social-media span{
+  letter-spacing: 1.5px;
+}

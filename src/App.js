@@ -5,6 +5,7 @@ import Routes from './routes'
 import Header from './components/Header'
 import ListBrands from './components/ListBrands'
 import Intro from './components/Intro'
+import Footer from './components/Footer'
 import { showProdutos } from './reducers/produtos/actionsCreators'
 import 'bootstrap-css'
 
@@ -14,18 +15,17 @@ function App({ loadingProdutos, visible }) {
   }, [loadingProdutos])
 
   return (
-    <>
-      <Router>
-        <Header />
-        {visible.showIntro === true && <Intro />}
-        <div className="container-fluid py-4 container-main">
-          <div className="row px-md-3 px-1">
-            <ListBrands />
-            <Routes />
-          </div>
+    <Router>
+      <Header />
+      {visible.showIntro === true && <Intro />}
+      <div className="container-fluid py-4">
+        <div className="row px-md-3 px-1">
+          <ListBrands />
+          <Routes />
         </div>
-      </Router>
-    </>
+      </div>
+      <Footer />
+    </Router>
   );
 }
 

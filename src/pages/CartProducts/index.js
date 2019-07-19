@@ -27,7 +27,7 @@ const CartProducts = ({ cart }) => {
     )
   }
   return (
-    <div className="col-lg-9 col-md-12 col-sm-12 mt-2">
+    <div className="col-lg-9 col-md-12 col-sm-12 mt-2" style={{ minHeight: '498px' }}>
       <h2 className='text-center text-uppercase font-italic'>
         Seu carrinho
       </h2>

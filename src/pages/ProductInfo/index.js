@@ -32,7 +32,7 @@ const ProductInfo = ({ showIntroMain, match: { params }, products, addProduct, u
         <section className="col-lg-10 col-md-12 col-sm-12 mt-2">
           <article className="phone-info row">
             <div className="phone-image col-md-5">
-              <img src={`http://localhost:3000/${product.imageBig}`} alt='' className='img-fluid mb-3' />
+              <img src={`${product.imageBig}`} alt='' className='img-fluid mb-3' />
             </div>
             <div className="phone-ficha col-md-7">
               <h3>{product.price}</h3>

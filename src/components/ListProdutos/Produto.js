@@ -17,7 +17,7 @@ const Produto = ({ produto, updateDB, addItemCart, cart }) => {
   }
 
   return (
-    <div className="col-md-3 col-sm-4 col mb-3 px-1 px-md-2">
+    <div className="col-xl-2 col-lg-3 col-md-3 col-sm-4 col-6 mb-3 px-1 px-md-2">
       <div className='card p-1'>
         <Link to={`/product/${produto.id}`} style={{ color: 'black' }} className='align-items-center d-flex flex-column'>
           <div>
@@ -28,8 +28,8 @@ const Produto = ({ produto, updateDB, addItemCart, cart }) => {
             />
           </div>
 
-          <div className="card-body p-2 w-100">
-            <h4 className='card-title mb-1'>{produto.price}</h4>
+          <div className="card-body p-2">
+            <h5 className='card-title mb-1'>{produto.price}</h5>
             <p className="card-text">{produto.title}</p>
           </div>
         </Link>

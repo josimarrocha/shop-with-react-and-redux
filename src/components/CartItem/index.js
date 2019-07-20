@@ -14,7 +14,7 @@ const CartItems = ({ product, removeItem, updateDB, addItemQntd, removeItemQntd 
       <li className="cart-item list-group-item p-1 pl-0 ">
         <div className='col-lg-2 col-md-2 col-sm-12 d-flex d-md-block justify-content-center'>
           <img
-            src={`http://localhost:3000/${product.image}`}
+            src={`${product.image}`}
             className='img-thumbnail' alt="" />
         </div>
         <div className="cart-products-name col-lg-3 col-md-3 col-sm-12">

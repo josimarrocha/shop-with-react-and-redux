@@ -22,7 +22,7 @@ const Produto = ({ produto, updateDB, addItemCart, cart }) => {
         <Link to={`/product/${produto.id}`} style={{ color: 'black' }} className='align-items-center d-flex flex-column'>
           <div>
             <img
-              src={`http://localhost:3000/${produto.image}`}
+              src={`${produto.image}`}
               className='img-fluid card-img-top' alt=""
               style={{ maxHeight: '200px' }}
             />

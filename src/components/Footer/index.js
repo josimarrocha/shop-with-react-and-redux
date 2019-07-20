@@ -8,33 +8,31 @@ const Footer = () => {
         <div className="row">
           <div className="social-media col-12 col-sm-4 col-md-4 ml-sm-2">
             <h5 className='text-uppercase'>Redes socias</h5>
-            <div className="facebook mt-3">
-              <a href="">
-                <i className="fab fa-facebook-f mr-2 px-2 pt-2" />
-                <span>Facebook</span>
-              </a>
-            </div>
-            <div className="github mt-2">
-              <a href="">
-                <i className="fab fa-github mr-2 px-2 pt-2" />
-                <span>GitHub</span>
-              </a>
-            </div>
-            <div className="linkedin mt-2">
-              <a href="">
-
-                <i className="fab fa-linkedin-in mr-2 px-2 pt-2" />
-                <span>Linkedin</span>
-              </a>
+            <div className='d-flex'>
+              <div className="facebook mt-2">
+                <a href="">
+                  <i className="fab fa-facebook-f mr-2 px-2 pt-2" />
+                </a>
+              </div>
+              <div className="github mt-2">
+                <a href="">
+                  <i className="fab fa-github mr-2 px-2 pt-2" />
+                </a>
+              </div>
+              <div className="linkedin mt-2">
+                <a href="">
+                  <i className="fab fa-linkedin-in mr-2 px-2 pt-2" />
+                </a>
+              </div>
             </div>
           </div>
           <div className="contatos col-12 col-sm-6 col-md-5 ml-sm-4 mt-2 mt-sm-0 mt-md-0">
             <h5 className='text-uppercase'>Contatos</h5>
-            <p className='mt-3'>
+            <p className='mt-3 mb-1'>
               <span className='mr-1'>Email:</span>
               josimarsantosdarocha@gmail.com
               </p>
-            <p>
+            <p className='mb-1'>
               <span className='mr-1'>Telefone:</span>
               11 - 9999-9999
               </p>
@@ -43,7 +41,6 @@ const Footer = () => {
               Lorem ipsum dolor sit amet, 58, SP
             </p>
           </div>
-
         </div>
       </footer>
     </section>

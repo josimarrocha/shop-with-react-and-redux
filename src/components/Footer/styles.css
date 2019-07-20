@@ -8,11 +8,11 @@ section.footer{
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.footer .social-media .facebook:hover,
-.footer .social-media .github:hover,
-.footer .social-media .linkedin:hover{
-  background: rgba(145, 146, 146, 0.205);
+.footer .social-media .facebook i:hover,
+.footer .social-media .github i:hover,
+.footer .social-media .linkedin i:hover{
   cursor: pointer;
+  background: rgba(153, 153, 153, 0.747);
 }
 .footer .social-media h5{
   letter-spacing: 1.5px;
@@ -29,12 +29,6 @@ section.footer{
   height: 35px;
   font-size: 18px;
   text-align: center;
-}
-.footer .facebook i{
-  background: #4267B2
-}
-.footer .linkedin i{
-  background: #0077B5
 }
 .footer .social-media span{
   letter-spacing: 1.5px;

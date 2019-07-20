@@ -23,9 +23,15 @@
 .brands .list-group-item:nth-child(1):hover{
   background: #333 !important;
 }
+.list-group a{
+  width: 100%;
+}
 
 @media (max-width: 991px){
   .brands{
     min-height: 10px !important;
+  }
+  .list-group a{
+    width: auto;
   }
 }

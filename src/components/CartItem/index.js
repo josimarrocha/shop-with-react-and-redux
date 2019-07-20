@@ -29,7 +29,7 @@ const CartItems = ({ product, removeItem, updateDB, addItemQntd, removeItemQntd 
           <p className=''>Marca</p>
           <h6>{product.brand}</h6>
         </div>
-        <div className="cart-products-count col-lg-2 col-md-2">
+        <div className="cart-products-count col-lg-2 col-md-2 pl-0">
           <p className=''>Quantidade</p>
           <div className="qndt d-flex">
             <button className='btn btn-danger py-1 px-2'

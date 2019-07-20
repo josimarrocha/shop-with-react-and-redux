@@ -32,7 +32,7 @@ const Header = ({ loadingProdutos, loadingIntro, cartLength, searchProducts }) =
             </form>
           </div>
           <div className="cart col-4 col-md-4 col-lg-3 d-flex justify-content-end">
-            <Link to='/cart' className='btn btn-primary pr-1' onClick={() => loadingIntro(false)}>
+            <Link to='/cart' className='text-white pr-1' onClick={() => loadingIntro(false)}>
               <i className="fas fa-cart-plus cart-icone mr-md-3">
                 {!!cartLength && <span className='cart-number-total'>{cartLength}</span>}
               </i>

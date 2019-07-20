@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/shop-with-react-and-redux/static/css/main.36b0f2ce.chunk.css",
+    "main.js": "/shop-with-react-and-redux/static/js/main.b8626f59.chunk.js",
+    "main.js.map": "/shop-with-react-and-redux/static/js/main.b8626f59.chunk.js.map",
+    "runtime~main.js": "/shop-with-react-and-redux/static/js/runtime~main.cfe0a161.js",
+    "runtime~main.js.map": "/shop-with-react-and-redux/static/js/runtime~main.cfe0a161.js.map",
+    "static/css/2.e904a037.chunk.css": "/shop-with-react-and-redux/static/css/2.e904a037.chunk.css",
+    "static/js/2.f8c15369.chunk.js": "/shop-with-react-and-redux/static/js/2.f8c15369.chunk.js",
+    "static/js/2.f8c15369.chunk.js.map": "/shop-with-react-and-redux/static/js/2.f8c15369.chunk.js.map",
+    "index.html": "/shop-with-react-and-redux/index.html",
+    "precache-manifest.7785396ea5f48c97d366311f3e153c6e.js": "/shop-with-react-and-redux/precache-manifest.7785396ea5f48c97d366311f3e153c6e.js",
+    "service-worker.js": "/shop-with-react-and-redux/service-worker.js",
+    "static/css/2.e904a037.chunk.css.map": "/shop-with-react-and-redux/static/css/2.e904a037.chunk.css.map",
+    "static/css/main.36b0f2ce.chunk.css.map": "/shop-with-react-and-redux/static/css/main.36b0f2ce.chunk.css.map"
+  }
+}
